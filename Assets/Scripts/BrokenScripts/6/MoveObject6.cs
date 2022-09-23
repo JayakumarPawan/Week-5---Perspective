@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class MoveObject6 : MonoBehaviour
 {
-    float moveSpeed;
+    //Need to add Serialize Field tag to allow speed to be set in inspector
+    [SerializeField] float moveSpeed;
     [SerializeField] Vector3 moveDirection;
 
     float totalMoveDistance;
